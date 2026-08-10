@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  --color-paper: #0b0f1a;
+  --color-ink: #eef2f8;
+  --color-muted: #9aa3b5;
+  --color-accent: #8e57e1;
+  --color-accent-deep: #7340c4;
+  --color-cyan: #32b2fc;
+  --color-line: #243044;
+
+  --color-background: var(--color-paper);
+  --color-foreground: var(--color-ink);
+  --color-primary: var(--color-accent);
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #151b2b;
+  --color-secondary-foreground: var(--color-ink);
+  --color-border: var(--color-line);
+  --color-ring: var(--color-cyan);
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    color-scheme: dark;
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply m-0 min-h-dvh bg-paper font-sans text-ink antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 55% at 8% -8%, rgb(142 87 225 / 0.28), transparent 55%),
+      radial-gradient(ellipse 65% 45% at 92% 0%, rgb(50 178 252 / 0.22), transparent 50%),
+      radial-gradient(ellipse 50% 40% at 50% 100%, rgb(142 87 225 / 0.1), transparent 60%),
+      repeating-linear-gradient(
+        -18deg,
+        transparent,
+        transparent 28px,
+        rgb(238 242 248 / 0.02) 28px,
+        rgb(238 242 248 / 0.02) 29px
+      );
+    background-attachment: fixed;
+  }
+
+  #root {
+    @apply min-h-dvh;
+  }
+
+  ::selection {
+    @apply bg-accent/40 text-ink;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .bg-brand-gradient {
+    background-image: linear-gradient(135deg, #8e57e1 0%, #32b2fc 100%);
+  }
+
+  .text-brand-gradient {
+    background-image: linear-gradient(135deg, #8e57e1 0%, #32b2fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-fade-up-delay {
+    animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both;
+  }
+
+  .animate-fade-up-delay-2 {
+    animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.24s both;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-up-delay,
+  .animate-fade-up-delay-2 {
+    animation: none;
+  }
+}
