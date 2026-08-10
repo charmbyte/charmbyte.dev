@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite'
 const rootDir = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
-  base: '/charmbyte.dev/',
+  base: '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
