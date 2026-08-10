@@ -11,12 +11,12 @@ type LogoProps = {
 
 const assets = {
   full: {
-    src: '/brand/logo-outline.svg',
+    src: `${import.meta.env.BASE_URL}brand/logo-outline.svg`,
     width: 2880,
     height: 2880,
   },
   mark: {
-    src: '/brand/logo-no-text.svg',
+    src: `${import.meta.env.BASE_URL}brand/logo-no-text.svg`,
     width: 999,
     height: 737,
   },
