@@ -4,19 +4,30 @@ export function PrivacyPage() {
       <h1 className="font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
         Privacy Policy
       </h1>
-      <p className="mt-2 text-sm text-muted">Last updated: August 10, 2026</p>
+      <p className="mt-2 text-sm text-muted">Last updated: August 14, 2026</p>
       <div className="mt-8 max-w-2xl space-y-5 text-base leading-relaxed text-muted">
         <p>
           CharmByte, LLC (“CharmByte,” “we,” “us,” or “our”) operates the website
           at www.charmbyte.dev (the “Site”).
         </p>
         <p>
-          <strong className="font-semibold text-ink">
-            We do not collect, store, sell, or otherwise use personal data
-          </strong>{' '}
-          through this Site. There are no account systems, contact forms,
-          newsletters, analytics trackers, advertising pixels, or cookies used
-          for tracking on this Site.
+          We use Google Analytics to understand how visitors use the Site (for
+          example, which pages are viewed and general device or browser
+          information). Google may set cookies or similar technologies for this
+          purpose. You can learn more in{' '}
+          <a
+            href="https://policies.google.com/privacy"
+            className="font-semibold text-cyan transition-colors hover:text-accent"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Google’s Privacy Policy
+          </a>
+          .
+        </p>
+        <p>
+          We do not sell personal data, and this Site has no account systems,
+          contact forms, newsletters, or advertising pixels.
         </p>
         <p>
           If you choose to email us (for example at me@charmbyte.dev), the

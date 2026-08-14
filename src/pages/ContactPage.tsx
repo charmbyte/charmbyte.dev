@@ -8,7 +8,7 @@ export function ContactPage() {
       </h1>
       <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted">
         Questions, press, or partnership notes—reach us by email. We don’t use a
-        contact form and we don’t collect personal data through this site.
+        contact form on this site.
       </p>
       <div className="mt-10">
         <Button asChild size="lg">
