@@ -13,7 +13,7 @@ export function HomePage() {
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgb(142_87_225/0.18),transparent_55%),radial-gradient(ellipse_at_80%_40%,rgb(50_178_252/0.14),transparent_50%)]" />
         <div className="relative mx-auto flex min-h-[calc(100dvh-5rem)] max-w-5xl flex-col justify-center px-5 py-16 sm:px-8 sm:py-20">
           <div className="animate-fade-up flex justify-center">
-            <Logo size="hero" asLink={false} />
+            <Logo size="hero" asLink={false} wordmark />
           </div>
           <h1 className="animate-fade-up-delay mt-8 max-w-2xl font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl md:text-6xl">
             Games with{' '}

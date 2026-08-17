@@ -20,8 +20,7 @@ pnpm preview
 
 Drop your final assets over these placeholders:
 
-- `public/brand/logo-outline.svg` (full CharmByte logo — hero)
-- `public/brand/logo-no-text.svg` (mark only — header)
+- `public/brand/logo.svg`
 - `public/brand/pwtycoon-logo-outline.svg`
 - `public/favicon.svg`
 

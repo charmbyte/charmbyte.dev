@@ -56,7 +56,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-line/80 bg-paper/85 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-5xl items-center justify-between px-5 sm:h-24 sm:px-8">
-        <Logo variant="mark" size="sm" />
+        <Logo size="sm" mark={false} wordmark />
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
           {navItems.map((item) => (
