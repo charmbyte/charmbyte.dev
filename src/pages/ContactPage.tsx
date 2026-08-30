@@ -12,7 +12,7 @@ export function ContactPage() {
       </p>
       <div className="mt-10">
         <Button asChild size="lg">
-          <a href="mailto:me@charmbyte.dev">Contact Us</a>
+          <a href="mailto:contact@charmbyte.dev">Contact Us</a>
         </Button>
       </div>
     </div>

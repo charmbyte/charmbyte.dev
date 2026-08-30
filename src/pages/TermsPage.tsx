@@ -47,10 +47,10 @@ export function TermsPage() {
           version on this page. Continued use of the Site after changes
           constitutes acceptance of the updated Terms. For questions, contact{' '}
           <a
-            href="mailto:me@charmbyte.dev"
+            href="mailto:contact@charmbyte.dev"
             className="font-semibold text-cyan transition-colors hover:text-accent"
           >
-            me@charmbyte.dev
+            contact@charmbyte.dev
           </a>
           .
         </p>

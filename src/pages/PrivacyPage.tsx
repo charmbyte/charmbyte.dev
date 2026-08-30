@@ -30,7 +30,7 @@ export function PrivacyPage() {
           contact forms, newsletters, or advertising pixels.
         </p>
         <p>
-          If you choose to email us (for example at me@charmbyte.dev), the
+          If you choose to email us (for example at contact@charmbyte.dev), the
           information you include in that message is under your control and is
           handled only as needed to respond to your inquiry. We do not add email
           addresses to marketing lists.
@@ -46,10 +46,10 @@ export function PrivacyPage() {
           If this policy changes, we will update this page with a new “Last
           updated” date. Questions about privacy may be sent to{' '}
           <a
-            href="mailto:me@charmbyte.dev"
+            href="mailto:contact@charmbyte.dev"
             className="font-semibold text-cyan transition-colors hover:text-accent"
           >
-            me@charmbyte.dev
+            contact@charmbyte.dev
           </a>
           .
         </p>
